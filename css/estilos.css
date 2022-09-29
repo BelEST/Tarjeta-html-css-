@@ -1,0 +1,163 @@
+/* font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif; */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2ebe3;
+}
+
+.container {
+  width: 555px;
+  height: 370px;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px -1px 7px 1px rgba(0, 0, 0, 0.75);
+}
+
+.header {
+  width: 50%;
+
+  background-image: url(../Imagenes/image-product-desktop.jpg);
+  background-size: cover;
+  transition: all 1s;
+  filter: blur(0px);
+}
+.header:hover {
+  background-size: 110%;
+  filter: blur(1px);
+}
+
+.pic1 {
+  width: 100%;
+  border-radius: 10px;
+}
+
+main {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 {
+  width: 80%;
+  height: 95%;
+}
+
+.perfume {
+  padding: 10px 0;
+  font-size: 0.6rem;
+  color: rgb(102, 100, 100);
+  font-family: "Montserrat", sans-serif;
+  word-spacing: 0.1rem;
+}
+
+.titulo {
+  font-family: "Fraunces", serif;
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+  word-spacing: 0.2rem;
+}
+
+.texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  padding: 7px 0;
+  color: gray;
+  line-height: 1.3rem;
+  word-spacing: 0.1rem;
+}
+
+.contain-precio {
+  display: flex;
+  align-items: center;
+}
+
+.precio1 {
+  color: #3c8067;
+  padding: 0;
+  font-size: 1.5em;
+  font-family: "Fraunces", serif;
+}
+
+.precio2 {
+  color: rgb(102, 100, 100);
+  padding-left: 15px;
+  text-decoration-line: line-through;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+}
+
+.container-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15;
+}
+
+.boton {
+  width: 380px;
+  height: 45px;
+  color: white;
+  background-color: #3c8067;
+  border-radius: 7px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  margin: 13px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.boton:hover {
+  opacity: 0.5;
+  box-shadow: 0px -1px 7px 1px rgba(0, 0, 0, 0.75);
+  transform: translate(0, 12px);
+}
+
+.Cart {
+  width: 18px;
+  padding-right: 5px;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 300px;
+    height: 525px;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    background-image: url(../Imagenes/image-product-mobile.jpg);
+    border-radius: 0;
+    height: 50%;
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
+  .container1 {
+    width: 100%;
+    padding: 20px;
+  }
+  .container-boton {
+    width: 274px;
+  }
+  .boton {
+    width: 100%;
+    height: 40px;
+  }
+  .texto {
+    margin-bottom: 20px;
+  }
+}
